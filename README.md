@@ -44,3 +44,50 @@ bundle init; bundle add rspec; rspec --init; mkdir lib; git init; git add .; git
 ## Class Diagram
 ![bank_tech excalidraw](https://user-images.githubusercontent.com/40929562/191244359-939d833f-8719-4532-b511-327e3848f330.svg)
 
+### Approach
+Initial approach split different classes to eliminate each class function then combine to get to result.
+
+1. BankAccount- main
+2. Activity- deposit, withdraw
+3. Transaction-process tree
+4. Statement - sum of transactions
+
+I have difficulty at the beginning to print out process after testing pass
+
+### Installation
+
+* Clone this repo to your local machine using `git@github.com:RedPRO16/bank_tech_Ruby.git`
+* Install dependencies:
+```
+$ bundle install
+```
+### To run the program:
+```
+$ cd bank_tech_Ruby
+```
+Then open within `irb`:
+```
+$ irb -r './lib/bank_acc.rb'
+```
+Create a new bank account:
+```
+> acc = BankAcc.new
+```
+To make a deposit of 1000:
+```
+> acc.deposit(1000)
+```
+To make a deposit of 2000:
+```
+> acc.deposit(2000)
+```
+To make a withdrawal of 500:
+```
+> acc.withdraw(500)
+```
+To print statement:
+```
+> acc.print
+```
+This will produce the following output in line with acceptance criteria:
+
