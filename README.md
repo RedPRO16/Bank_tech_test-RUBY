@@ -35,3 +35,10 @@ date || credit || debit || balance
 ## Self-assessment
 
 Once you have completed the challenge and feel happy with your solution, here's a form to help you reflect on the quality of your code: https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/edit
+
+## Initial Project Setup
+
+One-line command for the terminal that sets up RSpec and inits a git repo for project.
+bundle init; bundle add rspec; rspec --init; mkdir lib; git init; git add .; git commit -m "setup"
+
+
