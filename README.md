@@ -91,3 +91,4 @@ To print statement:
 ```
 This will produce the following output in line with acceptance criteria:
 
+![Screenshot 2022-09-20 at 18 09 46](https://user-images.githubusercontent.com/40929562/191324416-eaa52f43-4b30-4a66-b920-7b0d6dce2737.png)
