@@ -39,8 +39,9 @@ Once you have completed the challenge and feel happy with your solution, here's 
 ## Initial Project Setup
 
 One-line command for the terminal that sets up RSpec and inits a git repo for project.
-bundle init; bundle add rspec; rspec --init; mkdir lib; git init; git add .; git commit -m "setup"
-
+```
+$ bundle init; bundle add rspec; rspec --init; mkdir lib; git init; git add .; git commit -m "setup"
+```
 ## Class Diagram
 ![bank_tech excalidraw](https://user-images.githubusercontent.com/40929562/191244359-939d833f-8719-4532-b511-327e3848f330.svg)
 
