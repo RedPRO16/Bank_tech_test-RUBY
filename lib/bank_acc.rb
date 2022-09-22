@@ -1,13 +1,13 @@
-require_relative './print_statment'
+require_relative './printStatement'
 require_relative './transferActivity'
 
 class BankAcc
   attr_reader :balance
 
-  def initialize(act_class = TransferActivity, stat_class = Print_statment)
+  def initialize(activity_class = TransferActivity, statement_class = PrintStatement)
     @balance = 0
-    @activity = act_class.new
-    @print_statment = stat_class.new
+    @activity = activity_class.new
+    @printStatment = statement_class.new
   end
 
   def deposit(amount)
@@ -23,7 +23,7 @@ class BankAcc
   end
 
   def print
-    @print_statment.print(@activity.all_transactions)
+    @printStatment.print(@activity.all_transactions)
 
   end
 

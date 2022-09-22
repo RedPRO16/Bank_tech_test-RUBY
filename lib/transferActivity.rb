@@ -4,14 +4,14 @@ require_relative './transaction'
 class TransferActivity
   attr_reader :all_transactions
 
-  def initialize(trans_class = Transaction)
+  def initialize(transaction_class = Transaction)
     @all_transactions = []
-    @trans_class = Transaction
+    @transaction_class = Transaction
   end
 
   def add_transaction(date, credit, debit, balance)
     format_balance = balance_two_decimals(balance)
-    new_transaction = @trans_class.new(date, credit, debit, format_balance)
+    new_transaction = @transaction_class.new(date, credit, debit, format_balance)
     @all_transactions.push(new_transaction)
   end
 

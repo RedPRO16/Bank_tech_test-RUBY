@@ -1,6 +1,6 @@
-require 'print_statment'
+require 'printStatement'
 
-describe Print_statment do
+describe PrintStatement do
 
   it 'return a header string for the statement' do
     expect(subject.header).to eq 'date || credit || debit || balance'

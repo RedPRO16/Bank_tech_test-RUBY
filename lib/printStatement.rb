@@ -1,8 +1,8 @@
 
-class Print_statment
+class PrintStatement
 
   def initiliaze
-    @act_class = Activity
+    @activity_class = Activity
 
   end
 
