@@ -11,15 +11,25 @@ class BankAcc
   end
 
   def deposit(amount)
-    @balance += amount
-    credit = amount_two_decimals(amount)
-    @activity.add_transaction(current_date, credit, '', @balance)
+    if amount > 0
+      @balance += amount
+      credit = amount_two_decimals(amount)
+      @activity.add_transaction(current_date, credit, '', @balance)
+    else
+      'Invalid amount. Please enter a value over 0'
+    end
   end
 
   def withdraw(amount)
-    @balance -= amount
-    debit = amount_two_decimals(amount)
-    @activity.add_transaction(current_date, '', debit, @balance)
+    if amount == 0
+      'Invalid amount. Please enter a value over 0'
+    elsif amount <= @balance
+      @balance -= amount
+      debit = amount_two_decimals(amount)
+      @activity.add_transaction(current_date, '', debit, @balance)
+    else
+      'Insufficient funds'
+    end
   end
 
   def print
