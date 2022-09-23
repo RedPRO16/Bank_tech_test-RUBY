@@ -32,6 +32,7 @@ class BankAcc
     end
   end
 
+  
   def print
     @printStatment.print(@activity.all_transactions)
 
