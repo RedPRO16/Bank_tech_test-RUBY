@@ -32,19 +32,36 @@ date || credit || debit || balance
 10/01/2023 || 1000.00 || || 1000.00
 ```
 
-## Self-assessment
+### Self-assessment
 
 Once you have completed the challenge and feel happy with your solution, here's a form to help you reflect on the quality of your code: https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/edit
 
-## Initial Project Setup
+### Initial Project Setup
 
 One-line command for the terminal that sets up RSpec and inits a git repo for project.
 ```
 $ bundle init; bundle add rspec; rspec --init; mkdir lib; git init; git add .; git commit -m "setup"
 ```
-## Class Diagram
+### Class Diagram
 ![bank_tech excalidraw](https://user-images.githubusercontent.com/40929562/191244359-939d833f-8719-4532-b511-327e3848f330.svg)
 
+### User Stories
+```
+As a user, so I can manage my money, 
+I'd like a bank account that keeps track of my balance.
+
+As a user, so I can store my money, 
+I'd like to be able to deposit money into my bank account.
+
+As a user, so I can spend my money, 
+I'd like to be able to withdraw my money. 
+
+As a user, so I can see a summary of all my transactions,
+I'd like to be able to print a bank statement. 
+
+As a user, so I can get an overview of my spending, 
+I'd like to see the date, amounts in/out and my balance for each transaction on my bank statement.
+```
 ### Approach
 Initial approach split different classes to eliminate each class function then combine to get to result.
 
